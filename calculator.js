@@ -22,8 +22,8 @@ function remainderNums(num1, num2) {
   return num1 % num2
 }
 
-function sqrt (num) {
-  return num ** 0.5
+function sqrt (num1) {
+  return num1 ** 0.5
 }
 
 function calculate(expression) {
@@ -45,7 +45,7 @@ if (tokens.length === 3) {
 else if (tokens.length === 2) {
   operator = tokens[0];
   num1 = Number(tokens[1]);
-  if (Number.isNan(num1)) {
+  if (Number.isNaN(num1)) {
     alert('Not a number! Try again.')
     return;
   }
